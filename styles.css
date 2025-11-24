@@ -1,13 +1,38 @@
+img{
+    float: right;
+}
 .container{
     font-family: 'Poppins', sans-serif;
+    color: hsl(234, 12%, 34%);
+}
+.text{
+    text-align: center;
+}
+.reliableTitle{
+    font-weight: 200;
+}
+.powered{
+    font-weight: 600;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .supervisor, .teamBuilder, .karma, .calculator{
     border-radius: 10px;
     box-shadow: 2px 5px 8px hsl(212, 6%, 44%);
     margin-top: 20px;
+    height: 250px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 15px;
 }
 .supervisor{
     border-top: 5px solid hsl(180, 62%, 55%);
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 150px;
 }
 .teamBuilder{
     border-top: 5px solid hsl(0, 78%, 62%);
@@ -17,4 +42,8 @@
 }
 .calculator{
     border-top: 5px solid hsl(212, 86%, 64%);
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: 150px;
 }
