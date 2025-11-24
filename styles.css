@@ -1,0 +1,20 @@
+.container{
+    font-family: 'Poppins', sans-serif;
+}
+.supervisor, .teamBuilder, .karma, .calculator{
+    border-radius: 10px;
+    box-shadow: 2px 5px 8px hsl(212, 6%, 44%);
+    margin-top: 20px;
+}
+.supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.teamBuilder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.karma{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.calculator{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
