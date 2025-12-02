@@ -1,11 +1,20 @@
 img{
     float: right;
+    margin-top: 15px;
+}
+h2{
+    margin-bottom: 0;
+}
+.grid p{
+    margin-top: 3px;
+    line-height: 1.6;
 }
 .container{
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: hsl(234, 12%, 34%);
     justify-items: center;
+    margin-top: 50px;
 }
 .text{
     text-align: center;
@@ -28,40 +37,47 @@ img{
 }
 .supervisor, .teamBuilder, .karma, .calculator{
     border-radius: 10px;
-    box-shadow: 2px 5px 8px hsl(212, 6%, 44%);
+    box-shadow: 1px 9px 1.0em hsl(0, 0%, 85%);
     margin-top: 20px;
     height: 250px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 15px 30px 0;
     max-width: 400px;
 }
 .supervisor{
-    border-top: 5px solid hsl(180, 62%, 55%);
+    border-top: 4px solid hsl(180, 62%, 55%);
     grid-column-start: 1;
     grid-row-start: 1;
     grid-row-end: 3;
     margin-top: 150px;
 }
 .teamBuilder{
-    border-top: 5px solid hsl(0, 78%, 62%);
+    border-top: 4px solid hsl(0, 78%, 62%);
 }
 .karma{
-    border-top: 5px solid hsl(34, 97%, 64%);
+    margin-top: 25px;
+    border-top: 4px solid hsl(34, 97%, 64%);
 }
 .calculator{
-    border-top: 5px solid hsl(212, 86%, 64%);
+    border-top: 4px solid hsl(212, 86%, 64%);
     grid-column-start: 3;
     grid-row-start: 1;
     grid-row-end: 3;
     margin-top: 150px;
 }
 @media screen and (max-width: 375px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .text{
+        max-width: 300px;
+    }
     .grid{
         display: block;
         align-items: center;
     }
-    .supervisor, .calculator{
-        margin-top: 0;
+    .supervisor, .calculator, .karma, .teamBuilder{
+        margin-top: 30px;
     }
 }
